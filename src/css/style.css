@@ -154,3 +154,175 @@ body {
 .hero-txt {
     font-size: 20px;
 }
+
+/* ┌────────────┐
+   │  Problema  │
+   └────────────┘ */
+.problema {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 300px;
+}
+
+.problema h2 {
+    z-index: 3;
+    width: 68%;
+    margin-bottom: -11px;
+    font-size: 80px;
+    text-align: left;
+}
+
+.problema-video {
+    position: relative;
+    border-radius: 0 50px 0 50px;
+    overflow: hidden;
+}
+
+.problema-video video {
+    filter: brightness(60%) contrast(115%);
+    width: 100%;
+    min-width: 70vw;
+    height: 65vh;
+    object-fit: cover;
+}
+
+.problema-video::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.347);
+    z-index: 1;
+}
+
+.problema-txt {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.problema p {
+    box-shadow: var(--preto);
+    font-size: 25px;
+}
+
+.problema-p1 {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 60%;
+    text-align: left;
+}
+
+.problema-p2 {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    width: 60%;
+    text-align: right;
+}
+
+/* ┌──────────────┐
+   │  Tecnologia  │
+   └──────────────┘ */
+
+.tecnologia {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tecnologia-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+    margin: 0 auto;
+}
+
+.tecnologia-txt h2 {
+    font-size: 4rem;
+    width: 80%;
+    margin: 0 auto 20px;
+
+}
+
+.tecnologia-txt p {
+    font-size: 25px;
+    margin: 0 auto 20px;
+    text-align: center;
+
+
+}
+
+.tecnologia img {
+    width: 40vw;
+    filter: contrast(115%);
+}
+
+
+.satelite1 {
+    position: absolute;
+    top: 10px;
+    left: -90px;
+    z-index: 1;
+    animation: flutuar1 4s ease-in-out infinite;
+}
+
+.satelite2 {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -10px;
+    right: -90px;
+    z-index: 1;
+    animation: flutuar2 4s ease-in-out infinite;
+}
+
+.satelite1::before,
+.satelite2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.529);
+    z-index: 2;
+}
+
+@keyframes flutuar1 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes flutuar2 {
+
+    0% {
+        transform:
+            rotate(180deg) translateY(-15px);
+    }
+
+    50% {
+        transform:
+            rotate(180deg) translateY(0px);
+    }
+
+    100% {
+        transform:
+            rotate(180deg) translateY(-15px);
+    }
+
+}
