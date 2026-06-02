@@ -326,3 +326,129 @@ body {
     }
 
 }
+
+/* ┌────────────┐
+   │  Objetivo  │
+   └────────────┘ */
+
+.objetivo {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+.objetivo-video video {
+    filter: brightness(60%) contrast(115%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.objetivo-video {
+    position: relative;
+}
+
+.objetivo-video::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: rgba(0, 0, 0, 0.197);
+    z-index: 1;
+}
+
+.objetivo-txt {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    right: 80px;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: var(--texto);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.objetivo-txt h2 {
+    width: 45%;
+    font-size: 80px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.objetivo-paragrafo {
+    width: 40%;
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+/* ┌───────────┐
+   │  Publico  │
+   └───────────┘ */
+
+.publico {
+    position: relative;
+    min-height: 100vh;
+    padding: 80px;
+    margin-bottom: 200px;
+}
+
+.publico h2 {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    z-index: 3;
+    font-size: 6rem;
+    line-height: .9;
+    font-weight: normal;
+}
+
+.publico-card {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 80px;
+}
+
+.publico-img img {
+    margin-top: 14vh;
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 200px 200px 0 0;
+}
+
+.publico-video video {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 200px 200px 0 0;
+    filter: brightness(.75);
+}
+
+.publico-video::before,
+.publico-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: #00000065;
+}
+
+.publico-paragrafo {
+    max-width: 900px;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px solid var(--texto);
+    margin: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 438px;
+    left: 500px;
+    z-index: 3;
+}
