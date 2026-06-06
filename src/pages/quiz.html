@@ -45,7 +45,52 @@
         <section class="quiz">
             <h1>Titulo do quiz</h1>
             <div class="questionario">
-                <h2>A pergunta vai aqui</h2>
+
+                <h2 class="saudacao">Bem vindo(a)!</h2>
+
+                <div class="slider">
+
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1" checked>
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+
+                        <div class="slide primeiro">
+                            <img src="../assets/img/slide1.png" alt="Colheitadora colhendo">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../assets/img/slide2.png" alt="Agricultor trabalhando">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../assets/img/slide3.png" alt="Fazenda de soja">
+                        </div>
+
+                        <div class="autoNav">
+                            <div class="auto1"></div>
+                            <div class="auto2"></div>
+                            <div class="auto3"></div>
+                        </div>
+                    </div>
+
+                    <div class="manualNav">
+                        <label for="radio1" class="manualBtn"></label>
+                        <label for="radio2" class="manualBtn"></label>
+                        <label for="radio3" class="manualBtn"></label>
+                    </div>
+                </div>
+
+                <button class="start"> Começar</button>
+
+            </div>
+        </section>
+
+        <section class="quiz">
+            <h1>Titulo do quiz</h1>
+            <div class="questionario">
+
+                <h2>Pergunta aqui</h2>
 
                 <div class="respostas-container">
                     <button class="btnResposta">Resposta 1</button>
@@ -54,8 +99,24 @@
                     <button class="btnResposta">Resposta 4</button>
                     <button class="btnResposta">Resposta 5</button>
                 </div>
+
+                <button class="next">Próximo</button>
+
             </div>
         </section>
+
+        <section class="quiz">
+            <div class="questionario">
+                <h2 class="saudacao">Seu resultado foi:</h2>
+
+                <h3 class="resultado">10</h3>
+
+                <button class="next">Refazer</button>
+
+            </div>
+
+        </section>
+
     </main>
 
     <script src="../js/script.js" defer></script>
