@@ -1,1246 +1,1204 @@
-/* ┌────────┐
-   │  FONT  │
-   └────────┘ */
+/* ============
+ *  Font
+ * ============ */
 
-@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syncopate&family=Turret+Road:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate&family=Turret+Road:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
 h2 {
-    font-family: "Major Mono Display", monospace;
-    font-weight: 400;
-    font-style: normal;
-
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
 p {
-    font-family: "Cutive Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Cutive Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
-
-/* ┌─────────┐
-   │  RESET  │
-   └─────────┘ */
+/* ============
+ *  Reset
+ * ============ */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ┌────────┐
-   │  PAGE  │
-   └────────┘ */
-
-
+/* ============
+ *  Page
+ * ============ */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 section {
-    scroll-margin-top: 90px;
+  scroll-margin-top: 90px;
 }
 
 body {
-    background-color: var(--preto);
-    color: var(--texto);
-    overflow-x: hidden;
+  background-color: var(--preto);
+  color: var(--texto);
+  overflow-x: hidden;
 }
 
-/* ┌──────────┐
-   │  COLORS  │
-   └──────────┘ */
+/* ============
+ *  Colors  
+ * ============ */
 
 :root {
-    --preto: #000000;
-    --ancora: #ffe959;
-    --hover: #827000;
-    --texto: #fffae4;
-    --footer: #edc513;
-    --cardfooter: #0000004a;
+  --preto: #000000;
+  --ancora: #ffe959;
+  --hover: #827000;
+  --texto: #fffae4;
+  --footer: #edc513;
+  --cardfooter: #0000004a;
 }
 
-/* ┌───────┐
-   │  NAV  │
-   └───────┘ */
+/* ============
+ *  Nav
+ * ============ */
 
 .navbar {
-    background-color: var(--preto);
-    width: 100%;
-    height: 10vh;
-    padding: 16px 32px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 5;
-    position: fixed;
-
+  background-color: var(--preto);
+  width: 100%;
+  height: 10vh;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+  position: fixed;
 }
 
 .navlinks a {
-    color: var(--ancora);
-    text-decoration: none;
-    margin: 0 8px;
-    font-family: "Syncopate", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 13px;
-    display: inline-block;
-    transition: ease 1s;
-
+  color: var(--ancora);
+  text-decoration: none;
+  margin: 0 8px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  display: inline-block;
+  transition: ease 1s;
 }
 
 .navlinks a:hover {
-    transform: translateY(-5px);
-    color: var(--hover);
+  transform: translateY(-5px);
+  color: var(--hover);
 }
 
 .logo img {
-    height: 40px;
-    transition: ease 1s;
+  height: 40px;
+  transition: ease 1s;
 }
 
 .logo img:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
-/* ┌────────┐
-   │  HEAD  │
-   └────────┘ */
+/* ============
+ *  Head
+ * ============ */
 
 .hero-banner {
-    position: relative;
-    height: 80vh;
-    overflow: hidden;
-    margin-bottom: 200px;
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  margin-bottom: 200px;
 }
 
 .hero-banner img {
-    filter: brightness(60%) contrast(115%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  filter: brightness(60%) contrast(115%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-banner::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.46);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.46);
+  z-index: 1;
 }
 
 .hero-txt {
-    position: absolute;
-    top: 50%;
-    left: 60px;
-    transform: translateY(-50%);
-    z-index: 2;
-    color: var(--texto);
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: var(--texto);
 }
 
 .hero-txt h1 {
-    font-family: "Syncopate", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
 }
 
 .hero-txt {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-/* ┌────────────┐
-   │  Problema  │
-   └────────────┘ */
+/* ============
+ *  Problema
+ * ============ */
+
 .problema {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 300px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 300px;
 }
 
 .problema h2 {
-    z-index: 3;
-    width: 68%;
-    margin-bottom: -11px;
-    font-size: 80px;
-    text-align: left;
+  z-index: 3;
+  width: 68%;
+  margin-bottom: -11px;
+  font-size: 80px;
+  text-align: left;
 }
 
 .problema-video {
-    position: relative;
-    border-radius: 0 50px 0 50px;
-    overflow: hidden;
+  position: relative;
+  border-radius: 0 50px 0 50px;
+  overflow: hidden;
 }
 
 .problema-video video {
-    filter: brightness(60%) contrast(115%);
-    width: 100%;
-    min-width: 70vw;
-    height: 65vh;
-    object-fit: cover;
+  filter: brightness(60%) contrast(115%);
+  width: 100%;
+  min-width: 70vw;
+  height: 65vh;
+  object-fit: cover;
 }
 
 .problema-video::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.347);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.347);
+  z-index: 1;
 }
 
 .problema-txt {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
 }
 
 .problema p {
-    box-shadow: var(--preto);
-    font-size: 25px;
+  box-shadow: var(--preto);
+  font-size: 25px;
 }
 
 .problema-p1 {
-    position: absolute;
-    top: 30px;
-    left: 40px;
-    width: 60%;
-    text-align: left;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: 60%;
+  text-align: left;
 }
 
 .problema-p2 {
-    position: absolute;
-    bottom: 30px;
-    right: 40px;
-    width: 60%;
-    text-align: right;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: 60%;
+  text-align: right;
 }
 
-/* ┌──────────────┐
-   │  Tecnologia  │
-   └──────────────┘ */
+/* ============
+ *  Tecnologia
+ * ============ */
 
 .tecnologia {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .tecnologia-txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    z-index: 3;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  z-index: 3;
+  margin: 0 auto;
 }
 
 .tecnologia-txt h2 {
-    font-size: 4rem;
-    width: 80%;
-    margin: 0 auto 20px;
-
+  font-size: 4rem;
+  width: 80%;
+  margin: 0 auto 20px;
 }
 
 .tecnologia-txt p {
-    font-size: 25px;
-    margin: 0 auto 20px;
-    text-align: center;
-
-
+  font-size: 25px;
+  margin: 0 auto 20px;
+  text-align: center;
 }
 
 .tecnologia img {
-    width: 40vw;
-    filter: contrast(115%);
+  width: 40vw;
+  filter: contrast(115%);
 }
 
-
 .satelite1 {
-    position: absolute;
-    top: 10px;
-    left: -90px;
-    z-index: 1;
-    animation: flutuar1 4s ease-in-out infinite;
+  position: absolute;
+  top: 10px;
+  left: -90px;
+  z-index: 1;
+  animation: flutuar1 4s ease-in-out infinite;
 }
 
 .satelite2 {
-    transform: rotate(180deg);
-    position: absolute;
-    bottom: -10px;
-    right: -90px;
-    z-index: 1;
-    animation: flutuar2 4s ease-in-out infinite;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: -10px;
+  right: -90px;
+  z-index: 1;
+  animation: flutuar2 4s ease-in-out infinite;
 }
 
 .satelite1::before,
 .satelite2::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.529);
-    z-index: 2;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.529);
+  z-index: 2;
 }
 
 @keyframes flutuar1 {
-    0% {
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
 
-    50% {
-        transform: translateY(-15px);
-    }
+  50% {
+    transform: translateY(-15px);
+  }
 
-    100% {
-        transform: translateY(0px);
-    }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes flutuar2 {
+  0% {
+    transform: rotate(180deg) translateY(-15px);
+  }
 
-    0% {
-        transform:
-            rotate(180deg) translateY(-15px);
-    }
+  50% {
+    transform: rotate(180deg) translateY(0px);
+  }
 
-    50% {
-        transform:
-            rotate(180deg) translateY(0px);
-    }
-
-    100% {
-        transform:
-            rotate(180deg) translateY(-15px);
-    }
-
+  100% {
+    transform: rotate(180deg) translateY(-15px);
+  }
 }
 
-/* ┌────────────┐
-   │  Objetivo  │
-   └────────────┘ */
+/* ============
+ *  Objetivo  
+ * ============ */
 
 .objetivo {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 70vh;
-    margin-top: 200px;
-    margin-bottom: 300px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+  margin-top: 200px;
+  margin-bottom: 300px;
 }
 
 .objetivo-video video {
-    filter: brightness(60%) contrast(115%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  filter: brightness(60%) contrast(115%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .objetivo-video {
-    position: relative;
+  position: relative;
 }
 
 .objetivo-video::before {
-    position: absolute;
-    content: "";
-    inset: 0;
-    background: rgba(0, 0, 0, 0.197);
-    z-index: 1;
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: rgba(0, 0, 0, 0.197);
+  z-index: 1;
 }
 
 .objetivo-txt {
-    position: absolute;
-    top: 50%;
-    left: 80px;
-    right: 80px;
-    transform: translateY(-50%);
-    z-index: 2;
-    color: var(--texto);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  right: 80px;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: var(--texto);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .objetivo-txt h2 {
-    width: 45%;
-    font-size: 80px;
-    line-height: 1;
-    padding: 5px;
+  width: 45%;
+  font-size: 80px;
+  line-height: 1;
+  padding: 5px;
 }
 
 .objetivo-paragrafo {
-    width: 40%;
-    font-size: 30px;
-    line-height: 1.5;
-    text-align: right;
+  width: 40%;
+  font-size: 30px;
+  line-height: 1.5;
+  text-align: right;
 }
 
-/* ┌───────────┐
-   │  Publico  │
-   └───────────┘ */
+/* ============
+ *  Publico
+ * ============ */
 
 .publico {
-    position: relative;
-    min-height: 100vh;
-    padding: 80px;
-    margin-bottom: 200px;
+  position: relative;
+  min-height: 100vh;
+  padding: 80px;
+  margin-bottom: 200px;
 }
 
 .publico h2 {
-    position: absolute;
-    top: 20px;
-    left: 80px;
-    z-index: 3;
-    font-size: 6rem;
-    line-height: .9;
-    font-weight: normal;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  z-index: 3;
+  font-size: 6rem;
+  line-height: 0.9;
+  font-weight: normal;
 }
 
 .publico-card {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    gap: 80px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 80px;
 }
 
 .publico-img img {
-    margin-top: 14vh;
-    width: 400px;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 200px 200px 0 0;
+  margin-top: 14vh;
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 200px 200px 0 0;
 }
 
 .publico-video video {
-    width: 400px;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 200px 200px 0 0;
-    filter: brightness(.75);
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 200px 200px 0 0;
+  filter: brightness(0.75);
 }
 
 .publico-video::before,
 .publico-img::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    background-color: #00000065;
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-color: #00000065;
 }
 
 .publico-paragrafo {
-    max-width: 900px;
-    text-align: center;
-    font-size: 24px;
-    border-bottom: 1px solid var(--texto);
-    margin: 5px;
-    padding-bottom: 5px;
-    position: absolute;
-    top: 438px;
-    left: 500px;
-    z-index: 3;
+  max-width: 900px;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 1px solid var(--texto);
+  margin: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  top: 438px;
+  left: 500px;
+  z-index: 3;
 }
 
-/* ┌──────────────┐
-   │  Beneficios  │
-   └──────────────┘ */
+/* ============
+ *  Beneficios  
+ * ============ */
 
 .beneficios {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .beneficio-fundo {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
 
-
 .terra {
-    position: absolute;
-    top: 46%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 23vw;
-    animation: girar 30s linear infinite;
-    z-index: 1;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 23vw;
+  animation: girar 30s linear infinite;
+  z-index: 1;
 }
 
 @keyframes girar {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
 
-    from {
-        transform:
-            translate(-50%, -50%) rotate(0deg);
-    }
-
-    to {
-        transform:
-            translate(-50%, -50%) rotate(360deg);
-    }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 .beneficios h2 {
-    position: relative;
-    z-index: 2;
-    font-size: 5rem;
-    text-align: center;
-    bottom: 220px;
-    margin: 5px;
-    border-top: 1px solid var(--texto);
-
-
+  position: relative;
+  z-index: 2;
+  font-size: 5rem;
+  text-align: center;
+  bottom: 220px;
+  margin: 5px;
+  border-top: 1px solid var(--texto);
 }
 
 .beneficio-paragrafo {
-    position: relative;
-    z-index: 2;
-    width: 90%;
-    font-size: 23px;
-    text-align: center;
-    top: 120px;
-    border-bottom: 1px solid var(--texto);
-    margin: 5px;
-    padding: 10px;
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  font-size: 23px;
+  text-align: center;
+  top: 120px;
+  border-bottom: 1px solid var(--texto);
+  margin: 5px;
+  padding: 10px;
 }
 
-/* ┌─────────────┐
-   │  Aplicação  │
-   └─────────────┘ */
+/* ============
+ *  Aplicação  
+ * ============ */
 
 .aplicacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 120px 50px;
-    overflow: hidden;
-    margin: 150px 0;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 120px 50px;
+  overflow: hidden;
+  margin: 150px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aplicacao-txt {
-    display: flex;
-    flex-direction: column;
-    margin: 0 -80px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 -80px;
 }
 
 .aplicacao-txt h2 {
-    width: 50%;
-    margin-left: 600px;
-    margin-bottom: 30px;
-    font-size: 4rem;
+  width: 50%;
+  margin-left: 600px;
+  margin-bottom: 30px;
+  font-size: 4rem;
 }
 
 .aplicacao img {
-    position: relative;
-    z-index: 2;
-    margin-right: -500px;
-    height: 60vh;
-    border-radius: 100%;
-    object-fit: cover;
-    filter: brightness(85%) contrast(100%);
-    box-shadow:
-        0 0 25px rgba(255, 233, 89, 0.485),
-        0 0 60px rgb(30, 26, 0);
-    flex-shrink: 0;
-    transition: .6s ease;
+  position: relative;
+  z-index: 2;
+  margin-right: -500px;
+  height: 60vh;
+  border-radius: 100%;
+  object-fit: cover;
+  filter: brightness(85%) contrast(100%);
+  box-shadow:
+    0 0 25px rgba(255, 233, 89, 0.485),
+    0 0 60px rgb(30, 26, 0);
+  flex-shrink: 0;
+  transition: 0.6s ease;
 }
 
 .aplicacao img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-
 .aplicacao-paragrafo {
-    background: var(--texto);
-    padding: 50px 50px 40px 100px;
-    font-size: 26px;
-    width: 100%;
-    text-align: left;
-
+  background: var(--texto);
+  padding: 50px 50px 40px 100px;
+  font-size: 26px;
+  width: 100%;
+  text-align: left;
 }
 
 .aplicacao-paragrafo p {
-    font-weight: 600;
-    color: var(--preto);
-    width: 70%;
-    margin-left: 500px;
+  font-weight: 600;
+  color: var(--preto);
+  width: 70%;
+  margin-left: 500px;
 }
 
-/* ┌────────┐
-   │  Quiz  │
-   └────────┘ */
+/* ============
+ *  Quiz  
+ * ============ */
 
 .quiz {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px;
 }
 
 .quiz a {
-    text-decoration: none;
-    background-color: var(--footer);
-    color: var(--preto);
-    padding: 15px;
-    border-radius: 50px;
-    font-size: 2rem;
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    transition: 2s;
+  text-decoration: none;
+  background-color: var(--footer);
+  color: var(--preto);
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 2rem;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: 2s;
 }
 
 .quiz a:hover {
-    box-shadow:
-        0 0 25px rgba(255, 233, 89, 0.323),
-        0 0 60px rgba(255, 233, 89, .15);
-    transform: scale(1.1);
+  box-shadow:
+    0 0 25px rgba(255, 233, 89, 0.323),
+    0 0 60px rgba(255, 233, 89, 0.15);
+  transform: scale(1.1);
 }
 
-/* ┌──────────┐
-   │  FOOTER  │
-   └──────────┘ */
+/* ============
+ *  Footer  
+ * ============ */
 
 footer {
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(../assets/gif/footer.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../assets/gif/footer.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 footer p {
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    margin: 10px;
-    color: var(--footer);
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  margin: 10px;
+  color: var(--footer);
 }
 
 .grupo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .integrantes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 5px 20px;
-    height: 40vh;
-    transition: ease 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px 20px;
+  height: 40vh;
+  transition: ease 1s;
 }
 
 .integrantes:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .integrantes img {
-    border-radius: 100%;
-    margin: 5px 20px;
-    height: 20vh;
-
+  border-radius: 100%;
+  margin: 5px 20px;
+  height: 20vh;
 }
 
 .integrantes h2 {
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    margin: 5px 20px;
-    color: var(--texto);
-
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  margin: 5px 20px;
+  color: var(--texto);
 }
 
 .integrantes p {
-    margin: 5px 20px;
-    color: var(--texto);
-    font-family: "Jersey 10", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
+  margin: 5px 20px;
+  color: var(--texto);
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 
-/* ┌──────────────────┐
-   │  Responsividade  │
-   └──────────────────┘ */
-
-
-@media (max-width:767px) {
-
-    /* [ NAV ] */
-
-    .navbar {
-        height: auto;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .logo img {
-        height: 30px;
-    }
-
-    .navlinks {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 3px;
-    }
-
-    .navlinks a {
-        margin: 1px;
-        font-size: 7px;
-    }
-
-    /* [ HERO ] */
-
-    .hero-banner {
-        height: 75vh;
-    }
-
-    .hero-txt {
-        left: 10px;
-        right: 25px;
-        top: 40%;
-        transform: translateY(-40%);
-
-    }
-
-    .hero-txt h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero-txt p {
-        font-size: 1rem;
-        margin-top: 5px;
-    }
-
-    /* [ Problemas ] */
-
-    .problema {
-        margin-top: 150px;
-        margin-bottom: 170px;
-    }
-
-    .problema h2 {
-        width: 90%;
-        font-size: 2rem;
-        text-align: left;
-        margin-bottom: -4px;
-    }
-
-    .problema-video {
-        width: 92%;
-    }
-
-    .problema-video video {
-        min-width: 100%;
-        height: 50vh;
-    }
-
-    .problema p {
-        font-size: 1rem;
-    }
-
-    .problema-p1 {
-        top: 20px;
-        left: 20px;
-        width: 75%;
-    }
-
-    .problema-p2 {
-        bottom: 20px;
-        right: 20px;
-        width: 75%;
-    }
-
-    /* [ Tecnologia ] */
-
-    .tecnologia {
-        min-height: 90vh;
-        padding: 10px;
-    }
-
-    .tecnologia-txt {
-        width: 95%;
-    }
-
-    .tecnologia-txt h2 {
-        font-size: 2rem;
-        width: 100%;
-    }
-
-    .tecnologia-txt p {
-        font-size: .9rem;
-        width: 100%;
-    }
-
-    .tecnologia img {
-        width: 80vw;
-    }
-
-    .satelite1 {
-        top: 20px;
-        left: -70px;
-    }
-
-    .satelite2 {
-        bottom: 40px;
-        right: -70px;
-    }
-
-    /* [ Objetivos ] */
-
-    .objetivo {
-        height: 70vh;
-        margin-top: 200px;
-        margin-bottom: 180px;
-    }
-
-    .objetivo-video {
-        position: relative;
-        height: 100%;
-    }
-
-    .objetivo-video video {
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
-    }
-
-    .objetivo-txt {
-        left: 10px;
-        right: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 5px;
-    }
-
-    .objetivo-txt h2 {
-        width: 100%;
-        font-size: 2rem;
-        text-align: left;
-    }
-
-    .objetivo-paragrafo {
-        width: 100%;
-        font-size: .9rem;
-        text-align: right;
-        line-height: 1;
-    }
-
-    /* [ Público ] */
-
-    .publico {
-        padding: 10px;
-        margin-bottom: 120px;
-    }
-
-    .publico h2 {
-        position: relative;
-        top: 0;
-        left: 0;
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .publico-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 25px;
-    }
-
-    .publico-img img {
-        width: 40vw;
-        height: 30vh;
-        margin-top: -85px;
-        margin-left: 50%;
-    }
-
-
-    .publico-video video {
-        width: 40vw;
-        height: 30vh;
-        margin-top: 0px;
-        ;
-        margin-left: -50%;
-    }
-
-    .publico-paragrafo {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        max-width: 100%;
-        font-size: .9rem;
-        margin-top: -25px;
-        text-align: center;
-    }
-
-    /* [ Benefícios ] */
-
-    .beneficios {
-        min-height: 90vh;
-        padding: 20px;
-    }
-
-    .terra {
-        width: 50vw;
-        margin-top: -100px;
-    }
-
-    .beneficios h2 {
-        position: relative;
-        bottom: 190px;
-        font-size: 2rem;
-        border-top: 1px solid var(--texto);
-    }
-
-    .beneficio-paragrafo {
-        position: relative;
-        top: 10px;
-        width: 100%;
-        font-size: 1rem;
-        line-height: 1;
-        padding: 15px;
-    }
-
-    /* [ Aplicações ] */
-
-    .aplicacao {
-        flex-direction: column;
-        padding: 60px 20px;
-        margin: 100px 0;
-        gap: 10px;
-    }
-
-    .aplicacao img {
-        margin: 0;
-        height: 30vh;
-    }
-
-    .aplicacao-txt {
-        margin: 0;
-        width: 100%;
-    }
-
-    .aplicacao-txt h2 {
-        width: 100%;
-        margin: 15px;
-        font-size: 2rem;
-        text-align: center;
-
-    }
-
-    .aplicacao-paragrafo {
-        width: 100vw;
-        margin-left: -20px;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .aplicacao-paragrafo p {
-        width: 100%;
-        margin: 0;
-        font-size: .9rem;
-        text-align: center;
-    }
-
-
-    /* [ FOOTER ] */
-
-    .quiz {
-        margin: 100px 20px;
-        text-align: center;
-    }
-
-    .quiz a {
-        display: inline-block;
-        width: 100%;
-        max-width: 320px;
-        padding: 18px 20px;
-        font-size: 1.5rem;
-    }
-
-    .grupo {
-        flex-direction: column;
-    }
-
-    footer {
-        border-top: 1px solid rgba(255, 233, 89, .3);
-        padding: 60px 20px;
-        text-align: center;
-    }
-
+/* =================
+ *  Responsividade  
+ * ================= */
+
+@media (max-width: 767px) {
+  /* [ NAV ] */
+  w .navbar {
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .navlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 3px;
+  }
+
+  .navlinks a {
+    margin: 1px;
+    font-size: 7px;
+  }
+
+  /* [ HERO ] */
+
+  .hero-banner {
+    height: 75vh;
+  }
+
+  .hero-txt {
+    left: 10px;
+    right: 25px;
+    top: 40%;
+    transform: translateY(-40%);
+  }
+
+  .hero-txt h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-txt p {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  /* [ Problemas ] */
+
+  .problema {
+    margin-top: 150px;
+    margin-bottom: 170px;
+  }
+
+  .problema h2 {
+    width: 90%;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: -4px;
+  }
+
+  .problema-video {
+    width: 92%;
+  }
+
+  .problema-video video {
+    min-width: 100%;
+    height: 50vh;
+  }
+
+  .problema p {
+    font-size: 1rem;
+  }
+
+  .problema-p1 {
+    top: 20px;
+    left: 20px;
+    width: 75%;
+  }
+
+  .problema-p2 {
+    bottom: 20px;
+    right: 20px;
+    width: 75%;
+  }
+
+  /* [ Tecnologia ] */
+
+  .tecnologia {
+    min-height: 90vh;
+    padding: 10px;
+  }
+
+  .tecnologia-txt {
+    width: 95%;
+  }
+
+  .tecnologia-txt h2 {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .tecnologia-txt p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .tecnologia img {
+    width: 80vw;
+  }
+
+  .satelite1 {
+    top: 20px;
+    left: -70px;
+  }
+
+  .satelite2 {
+    bottom: 40px;
+    right: -70px;
+  }
+
+  /* [ Objetivos ] */
+
+  .objetivo {
+    height: 70vh;
+    margin-top: 200px;
+    margin-bottom: 180px;
+  }
+
+  .objetivo-video {
+    position: relative;
+    height: 100%;
+  }
+
+  .objetivo-video video {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .objetivo-txt {
+    left: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .objetivo-txt h2 {
+    width: 100%;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .objetivo-paragrafo {
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: right;
+    line-height: 1;
+  }
+
+  /* [ Público ] */
+
+  .publico {
+    padding: 10px;
+    margin-bottom: 120px;
+  }
+
+  .publico h2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .publico-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .publico-img img {
+    width: 40vw;
+    height: 30vh;
+    margin-top: -85px;
+    margin-left: 50%;
+  }
+
+  .publico-video video {
+    width: 40vw;
+    height: 30vh;
+    margin-top: 0px;
+    margin-left: -50%;
+  }
+
+  .publico-paragrafo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    max-width: 100%;
+    font-size: 0.9rem;
+    margin-top: -25px;
+    text-align: center;
+  }
+
+  /* [ Benefícios ] */
+
+  .beneficios {
+    min-height: 90vh;
+    padding: 20px;
+  }
+
+  .terra {
+    width: 50vw;
+    margin-top: -100px;
+  }
+
+  .beneficios h2 {
+    position: relative;
+    bottom: 190px;
+    font-size: 2rem;
+    border-top: 1px solid var(--texto);
+  }
+
+  .beneficio-paragrafo {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 15px;
+  }
+
+  /* [ Aplicações ] */
+
+  .aplicacao {
+    flex-direction: column;
+    padding: 60px 20px;
+    margin: 100px 0;
+    gap: 10px;
+  }
+
+  .aplicacao img {
+    margin: 0;
+    height: 30vh;
+  }
+
+  .aplicacao-txt {
+    margin: 0;
+    width: 100%;
+  }
+
+  .aplicacao-txt h2 {
+    width: 100%;
+    margin: 15px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .aplicacao-paragrafo {
+    width: 100vw;
+    margin-left: -20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .aplicacao-paragrafo p {
+    width: 100%;
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* [ FOOTER ] */
+
+  .quiz {
+    margin: 100px 20px;
+    text-align: center;
+  }
+
+  .quiz a {
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+    padding: 18px 20px;
+    font-size: 1.5rem;
+  }
+
+  .grupo {
+    flex-direction: column;
+  }
+
+  footer {
+    border-top: 1px solid rgba(255, 233, 89, 0.3);
+    padding: 60px 20px;
+    text-align: center;
+  }
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* [ Tecnologia ] */
 
-    /* [ Tecnologia ] */
+  .tecnologia img {
+    width: 60vw;
+  }
 
-    .tecnologia img {
-        width: 60vw;
-    }
+  .satelite1 {
+    top: 20px;
+    left: -70px;
+  }
 
-    .satelite1 {
-        top: 20px;
-        left: -70px;
-    }
+  .satelite2 {
+    bottom: 40px;
+    right: -70px;
+  }
 
-    .satelite2 {
-        bottom: 40px;
-        right: -70px;
-    }
+  /* [ Objetivos ] */
 
-    /* [ Objetivos ] */
+  .objetivo {
+    height: 70vh;
+    margin-top: 200px;
+    margin-bottom: 180px;
+  }
 
-    .objetivo {
-        height: 70vh;
-        margin-top: 200px;
-        margin-bottom: 180px;
-    }
+  .objetivo-video {
+    position: relative;
+    height: 100%;
+  }
 
-    .objetivo-video {
-        position: relative;
-        height: 100%;
-    }
+  .objetivo-video video {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
 
-    .objetivo-video video {
-        width: 100%;
-        height: 70%;
-        object-fit: cover;
-    }
+  .objetivo-txt {
+    left: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+  }
 
-    .objetivo-txt {
-        left: 10px;
-        right: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 5px;
-    }
+  .objetivo-txt h2 {
+    width: 100%;
+    font-size: 2rem;
+    text-align: left;
+  }
 
-    .objetivo-txt h2 {
-        width: 100%;
-        font-size: 2rem;
-        text-align: left;
-    }
+  .objetivo-paragrafo {
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: right;
+    line-height: 1;
+  }
 
-    .objetivo-paragrafo {
-        width: 100%;
-        font-size: .9rem;
-        text-align: right;
-        line-height: 1;
-    }
+  /* [ Público ] */
 
-    /* [ Público ] */
+  .publico {
+    padding: 10px;
+    margin-bottom: 120px;
+  }
 
-    .publico {
-        padding: 10px;
-        margin-bottom: 120px;
-    }
+  .publico h2 {
+    position: relative;
+    top: 130px;
+    left: 0;
+    font-size: 4rem;
+    text-align: left;
+  }
 
-    .publico h2 {
-        position: relative;
-        top: 130px;
-        left: 0;
-        font-size: 4rem;
-        text-align: left;
-    }
+  .publico-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .publico-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .publico-img img {
+    width: 40vw;
+    height: 60vh;
+    margin-top: -300px;
+    margin-left: 60%;
+  }
 
-    .publico-img img {
-        width: 40vw;
-        height: 60vh;
-        margin-top: -300px;
-        margin-left: 60%;
-    }
+  .publico-video video {
+    width: 40vw;
+    height: 60vh;
+    margin-top: 0px;
+    margin-left: -50%;
+  }
 
+  .publico-paragrafo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    max-width: 100%;
+    font-size: 0.9rem;
+    margin-top: -84px;
+    text-align: center;
+  }
 
-    .publico-video video {
-        width: 40vw;
-        height: 60vh;
-        margin-top: 0px;
-        margin-left: -50%;
-    }
+  /* [ Benefícios ] */
 
-    .publico-paragrafo {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 90%;
-        max-width: 100%;
-        font-size: .9rem;
-        margin-top: -84px;
-        text-align: center;
-    }
+  .beneficios {
+    min-height: 90vh;
+    padding: 20px;
+    margin-top: 400px;
+  }
 
-    /* [ Benefícios ] */
+  .terra {
+    width: 35vw;
+    margin-top: -100px;
+  }
 
-    .beneficios {
-        min-height: 90vh;
-        padding: 20px;
-        margin-top: 400px;
-    }
+  .beneficios h2 {
+    position: relative;
+    bottom: 252px;
+    font-size: 3rem;
+    border-top: 1px solid var(--texto);
+  }
 
-    .terra {
-        width: 35vw;
-        margin-top: -100px;
-    }
-
-    .beneficios h2 {
-        position: relative;
-        bottom: 252px;
-        font-size: 3rem;
-        border-top: 1px solid var(--texto);
-    }
-
-    .beneficio-paragrafo {
-        position: relative;
-        top: 10px;
-        width: 100%;
-        font-size: 1rem;
-        line-height: 1;
-        padding: 15px;
-    }
-
+  .beneficio-paragrafo {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 15px;
+  }
 }
 
-@media screen and (width:1024px) {
+@media screen and (width: 1024px) {
+  /* [ Público ] */
 
-    /* [ Público ] */
+  .publico {
+    padding: 10px;
+    margin-bottom: 120px;
+  }
 
-    .publico {
-        padding: 10px;
-        margin-bottom: 120px;
-    }
+  .publico h2 {
+    position: relative;
+    top: 190px;
+    left: 0;
+    font-size: 4rem;
+    text-align: left;
+  }
 
-    .publico h2 {
-        position: relative;
-        top: 190px;
-        left: 0;
-        font-size: 4rem;
-        text-align: left;
-    }
+  .publico-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .publico-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .publico-img img {
+    width: 40vw;
+    height: 80vh;
+    margin-top: -480px;
+    margin-left: 60%;
+  }
 
-    .publico-img img {
-        width: 40vw;
-        height: 80vh;
-        margin-top: -480px;
-        margin-left: 60%;
-    }
+  .publico-video video {
+    width: 40vw;
+    height: 80vh;
+    margin-top: 0px;
+    margin-left: -50%;
+  }
 
+  .publico-paragrafo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 100%;
+    font-size: 1.4rem;
+    margin-top: -190px;
+    text-align: center;
+  }
 
-    .publico-video video {
-        width: 40vw;
-        height: 80vh;
-        margin-top: 0px;
-        margin-left: -50%;
-    }
+  /* [ Beneficios ] */
 
-    .publico-paragrafo {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 70%;
-        max-width: 100%;
-        font-size: 1.4rem;
-        margin-top: -190px;
-        text-align: center;
-    }
+  .beneficios {
+    min-height: 90vh;
+    padding: 20px;
+    margin-top: 400px;
+  }
 
-    /* [ Beneficios ] */
+  .terra {
+    width: 34vw;
+    margin-top: -100px;
+  }
 
-    .beneficios {
-        min-height: 90vh;
-        padding: 20px;
-        margin-top: 400px;
-    }
+  .beneficios h2 {
+    position: relative;
+    width: 90%;
+    bottom: 305px;
+    font-size: 3rem;
+    border-top: 1px solid var(--texto);
+  }
 
-    .terra {
-        width: 34vw;
-        margin-top: -100px;
-    }
+  .beneficio-paragrafo {
+    position: relative;
+    top: 25px;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 15px;
+  }
 
-    .beneficios h2 {
-        position: relative;
-        width: 90%;
-        bottom: 305px;
-        font-size: 3rem;
-        border-top: 1px solid var(--texto);
-    }
+  .aplicacao-paragrafo {
+    background: var(--texto);
+    padding: 50px 50px 40px 100px;
+    width: 100%;
+    text-align: left;
+  }
 
-    .beneficio-paragrafo {
-        position: relative;
-        top: 25px;
-        width: 100%;
-        font-size: 1rem;
-        line-height: 1;
-        padding: 15px;
-    }
-
-    .aplicacao-paragrafo {
-        background: var(--texto);
-        padding: 50px 50px 40px 100px;
-        width: 100%;
-        text-align: left;
-
-    }
-
-    .aplicacao-paragrafo p {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--preto);
-        width: 50%;
-        margin-left: 500px;
-    }
-
+  .aplicacao-paragrafo p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--preto);
+    width: 50%;
+    margin-left: 500px;
+  }
 }

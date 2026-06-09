@@ -1,125 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/quiz.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/quiz.css" />
     <title>Quiz | Colosys</title>
-</head>
+    <script src="../js/perguntas.js"></script>
+    <script src="../js/script.js" defer></script>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="bubble bubble1"></div>
-        <div class="bubble bubble2"></div>
-        <div class="bubble bubble3"></div>
-        <div class="bubble bubble4"></div>
-        <div class="bubble bubble5"></div>
+      <div class="bubble bubble1"></div>
+      <div class="bubble bubble2"></div>
+      <div class="bubble bubble3"></div>
+      <div class="bubble bubble4"></div>
+      <div class="bubble bubble5"></div>
     </div>
 
     <header>
-        <nav class="navbar">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../../index.html">
+            <img src="../assets/img/logo.png" alt="Logo do Colosys" />
+          </a>
+        </div>
 
-            <div class="logo">
-                <a href="../../index.html">
-                    <img src="../assets/img/logo.png" alt="Logo do Colosys">
-                </a>
-            </div>
-
-
-            <div class="navthemes">
-                <div class="themes">
-                    <button id="estatico">Estático</button>
-                    <button id="claro">Claro</button>
-                    <button id="medio">Médio</button>
-                    <button id="escuro">Escuro</button>
-
-                </div>
-            </div>
-        </nav>
+        <div class="navthemes">
+          <div class="themes">
+            <button id="estatico">Estático</button>
+            <button id="claro">Claro</button>
+            <button id="medio">Médio</button>
+            <button id="escuro">Escuro</button>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
+      <section class="quiz" id="start">
+        <h1>Titulo do quiz</h1>
+        <div class="questionario">
+          <h2 class="saudacao">Bem vindo(a)!</h2>
 
+          <div class="slider">
+            <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1" checked />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
 
-        <section class="quiz">
-            <h1>Titulo do quiz</h1>
-            <div class="questionario">
+              <div class="slide primeiro">
+                <img
+                  src="../assets/img/slide1.png"
+                  alt="Colheitadora colhendo"
+                />
+              </div>
 
-                <h2 class="saudacao">Bem vindo(a)!</h2>
+              <div class="slide">
+                <img
+                  src="../assets/img/slide2.png"
+                  alt="Agricultor trabalhando"
+                />
+              </div>
 
-                <div class="slider">
+              <div class="slide">
+                <img src="../assets/img/slide3.png" alt="Fazenda de soja" />
+              </div>
 
-                    <div class="slides">
-                        <input type="radio" name="radio-btn" id="radio1" checked>
-                        <input type="radio" name="radio-btn" id="radio2">
-                        <input type="radio" name="radio-btn" id="radio3">
-
-                        <div class="slide primeiro">
-                            <img src="../assets/img/slide1.png" alt="Colheitadora colhendo">
-                        </div>
-
-                        <div class="slide">
-                            <img src="../assets/img/slide2.png" alt="Agricultor trabalhando">
-                        </div>
-
-                        <div class="slide">
-                            <img src="../assets/img/slide3.png" alt="Fazenda de soja">
-                        </div>
-
-                        <div class="autoNav">
-                            <div class="auto1"></div>
-                            <div class="auto2"></div>
-                            <div class="auto3"></div>
-                        </div>
-                    </div>
-
-                    <div class="manualNav">
-                        <label for="radio1" class="manualBtn"></label>
-                        <label for="radio2" class="manualBtn"></label>
-                        <label for="radio3" class="manualBtn"></label>
-                    </div>
-                </div>
-
-                <button class="start"> Começar</button>
-
-            </div>
-        </section>
-
-        <section class="quiz">
-            <h1>Titulo do quiz</h1>
-            <div class="questionario">
-
-                <h2>Pergunta aqui</h2>
-
-                <div class="respostas-container">
-                    <button class="btnResposta">Resposta 1</button>
-                    <button class="btnResposta">Resposta 2</button>
-                    <button class="btnResposta">Resposta 3</button>
-                    <button class="btnResposta">Resposta 4</button>
-                    <button class="btnResposta">Resposta 5</button>
-                </div>
-
-                <button class="next">Próximo</button>
-
-            </div>
-        </section>
-
-        <section class="quiz">
-            <div class="questionario">
-                <h2 class="saudacao">Seu resultado foi:</h2>
-
-                <h3 class="resultado">10</h3>
-
-                <button class="next">Refazer</button>
-
+              <div class="autoNav">
+                <div class="auto1"></div>
+                <div class="auto2"></div>
+                <div class="auto3"></div>
+              </div>
             </div>
 
-        </section>
+            <div class="manualNav">
+              <label for="radio1" class="manualBtn"></label>
+              <label for="radio2" class="manualBtn"></label>
+              <label for="radio3" class="manualBtn"></label>
+            </div>
+          </div>
 
+          <button class="start">Começar</button>
+        </div>
+      </section>
+
+      <section class="quiz hidden" id="pergunta" number="0">
+        <h1>Titulo do quiz</h1>
+        <div class="questionario">
+          <h2 id="prompt">Pergunta aqui</h2>
+
+          <div class="respostas-container" id="respostas">
+            <button class="btnResposta" id="resp-1" alternativa="1">Resposta 1</button>
+            <button class="btnResposta" id="resp-2" alternativa="2">Resposta 2</button>
+            <button class="btnResposta" id="resp-3" alternativa="3">Resposta 3</button>
+            <button class="btnResposta" id="resp-4" alternativa="4">Resposta 4</button>
+            <button class="btnResposta" id="resp-5" alternativa="5">Resposta 5</button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="quiz hidden" id="final">
+        <div class="questionario">
+          <h2 class="saudacao">Seu resultado foi:</h2>
+
+          <h3 class="resultado" id="result">0/0</h3>
+
+          <button class="next">Refazer</button>
+        </div>
+      </section>
     </main>
 
-    <script src="../js/script.js" defer></script>
-</body>
-
+  </body>
 </html>
