@@ -1,9 +1,236 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Global Solution | Colosys</title>
   </head>
-  <body></body>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#inicio">
+          <img src="./src/assets/img/logo.png" alt="Logo do Colosys" />
+        </a>
+      </div>
+
+      <div class="navlinks">
+        <a href="#problema">Problema</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#objetivo">Objetivos</a>
+        <a href="#publico">Público</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#aplicacao">Aplicação</a>
+      </div>
+    </nav>
+
+    <header>
+      <div class="hero-banner" id="inicio">
+        <img
+          src="./src/assets/img/banerhead.png"
+          alt="Nascer do Sol sobre a Terra vista do espaço, com a Lua ao fundo"
+        />
+
+        <div class="hero-txt">
+          <h1>ASTROLINK RURAL</h1>
+          <p>Internet e Agricultura Inteligente</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="problema" id="problema">
+        <h2>O Problema</h2>
+        <div class="problema-video">
+          <video autoplay loop muted playsinline aria-hidden="true">
+            <source src="./src/assets/video/problema.mp4" />
+          </video>
+
+          <div class="problema-txt">
+            <p class="problema-p1">
+              Áreas rurais enfrentam baixa conectividade, desperdício e pouca
+              previsibilidade agrícola.
+            </p>
+            <p class="problema-p2">
+              Esses desafios reduzem produtividade, aumentam custos e dificultam
+              decisões rápidas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tecnologia" id="tecnologia">
+        <div class="satelite1">
+          <img src="./src/assets/img/satelit.png" alt="Satélite orbitando" />
+        </div>
+
+        <div class="tecnologia-txt">
+          <h2>Tecnologia que Conecta e Monitora</h2>
+          <p>
+            Nossa solução utiliza avançados satélites LEO e sensores conectados.
+          </p>
+          <p>
+            Aplicamos inteligência artificial e APIs da NASA para monitoramento
+            eficiente.
+          </p>
+        </div>
+
+        <div class="satelite2">
+          <img
+            src="./src/assets/img/satelit.png"
+            alt="Segundo satélite orbitando"
+          />
+        </div>
+      </section>
+
+      <section class="objetivo" id="objetivo">
+        <div class="objetivo-video">
+          <video autoplay loop muted playsinline aria-hidden="true">
+            <source src="./src/assets/video/objetivo.mp4" />
+          </video>
+        </div>
+
+        <div class="objetivo-txt">
+          <h2>Nossa Missão no Agronegócio</h2>
+          <div class="objetivo-paragrafo">
+            <p>Queremos levar conectividade de ponta para as plantações.</p>
+            <p>
+              Nosso foco é otimizar irrigação, colheitas e reduzir pragas
+              agrícolas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="publico" id="publico">
+        <div class="publico-card">
+          <h2>Quem será<br />Impactado?</h2>
+
+          <div class="publico-video">
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              aria-label="Vídeo representando manejo agrícola com aplicação manual de produtos em plantação"
+            >
+              <source src="./src/assets/video/publico.mp4" />
+            </video>
+          </div>
+
+          <div class="publico-img">
+            <img
+              src="./src/assets/img/publico.webp"
+              alt="Agricultur cercado por platação de milho"
+            />
+          </div>
+
+          <div class="publico-paragrafo">
+            <p>
+              Impactamos diretamente produtores rurais, grandes fazendas e
+              cooperativas agrícolas.
+            </p>
+            <p>Beneficiamos também comunidades que tiverem internet estável.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="beneficios" id="beneficios">
+        <div class="beneficio-fundo">
+          <img
+            src="./src/assets/img/beneficioT.png"
+            class="terra"
+            alt="Imagem da Terra girando"
+          />
+        </div>
+        <h2>Resultados que Geram Valor</h2>
+        <div class="beneficio-paragrafo">
+          <p>
+            Garantimos maior produtividade no campo, economia de água e decisões
+            mais inteligentes.
+          </p>
+          <p>
+            Nossa solução integra perfeitamente tecnologia espacial,
+            telecomunicações, agritech e inteligência artificial.
+          </p>
+        </div>
+      </section>
+
+      <section class="aplicacao" id="aplicacao">
+        <img
+          src="./src/assets/img/aplicacao.jpg"
+          alt="Agricultor analisando a plantação com auxilio de tablet"
+        />
+        <div class="aplicacao-txt">
+          <h2>Inteligência Aplicada ao Campo</h2>
+          <div class="aplicacao-paragrafo">
+            <p>
+              Agricultores recebem alertas em tempo real sobre estresse hídrico.
+            </p>
+            <p>
+              Satélites monitoram continuamente a saúde e umidade de toda
+              plantação.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="quiz">
+        <a href="./src/pages/quiz.html"
+          >Responda ao quiz e explore a agricultura inteligente.</a
+        >
+      </div>
+    </main>
+
+    <footer>
+      <div class="grupo">
+        <div class="integrantes">
+          <img
+            src="./src/assets/img/beatriz.png"
+            alt="Retrato da integrante Beatriz"
+          />
+          <h2>Beatriz</h2>
+          <p>Rm: 573698</p>
+        </div>
+
+        <div class="integrantes">
+          <img
+            src="./src/assets/img/lorenzo.png"
+            alt="Retrato do integrante Lorenzo"
+          />
+          <h2>Lorenzo</h2>
+          <p>Rm: 570036</p>
+        </div>
+
+        <div class="integrantes">
+          <img
+            src="./src/assets/img/maria.png"
+            alt="Retrato da integrante Maria Clara"
+          />
+          <h2>Maria</h2>
+          <p>Rm: 573246</p>
+        </div>
+
+        <div class="integrantes">
+          <img
+            src="./src/assets/img/murillo.png"
+            alt="Retrato do integrante Murillo"
+          />
+          <h2>Murillo</h2>
+          <p>Rm: 573674</p>
+        </div>
+
+        <div class="integrantes">
+          <img
+            src="./src/assets/img/raissa.png"
+            alt="Retrato da integrante Raíssa"
+          />
+          <h2>Raíssa</h2>
+          <p>Rm: 572166</p>
+        </div>
+      </div>
+      <p>© 2026 Global Solution - Colosys</p>
+    </footer>
+  </body>
 </html>
