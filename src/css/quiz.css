@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&family=Turret+Road:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
-h2 {
+h1 {
   font-family: "Major Mono Display", monospace;
   font-weight: 400;
   font-style: normal;
@@ -318,9 +318,12 @@ body.escuro {
  *  Capa
  * ============ */
 
-.saudacao {
-  font-size: 35px;
-  margin-bottom: 25px;
+.questionario .saudacao h2{
+ font-family: "Cutive Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  text-align: center;
 }
 
 .slider {
@@ -478,12 +481,17 @@ main {
   align-items: center;
 }
 
-.quiz h1 {
+.quiz h1{
+  font-size: 45px;
+  color: var(--titulo);
+}
+
+.questionario h2 {
   font-family: "Cutive Mono";
   font-style: normal;
   font-weight: 400;
-  font-size: 45px;
-  color: var(--titulo);
+  font-size: 20px;
+  text-align: center;
 }
 
 .respostas-container {
@@ -517,7 +525,29 @@ main {
   box-shadow: 0 0 15px var(--buttonhover);
 }
 
+/* ============
+ *  Resultado 
+ * ============ */
+
+.resultado {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "Major Mono Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+}
+
+.questionario .resultadoT h2{
+  font-family: "Major Mono Display", monospace;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+
 .next {
+  margin-top: 15px;
   height: 25px;
   width: 100px;
   text-align: center;
@@ -536,17 +566,4 @@ main {
   color: var(--txthover);
   border: 1px solid var(--bordabotaohover);
   box-shadow: 0 0 15px var(--buttonhover);
-}
-
-/* ============
- *  Resultado 
- * ============ */
-
-.resultado {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-family: "Major Mono Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 200px;
 }
